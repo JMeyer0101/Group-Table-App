@@ -11,7 +11,9 @@ import UIKit
 class ConcertTableViewController: UITableViewController {
     
     var concerts = [Concert]()
+    //@IBOutlet var mapbutton: UIButton!
     
+    @IBOutlet var itemtable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +27,9 @@ class ConcertTableViewController: UITableViewController {
     
     func loadSampleConcerts() {
         //let photo1 = UIImage(named: "meal1")!
-        let concert1 = Concert(band: "Artist Name", photo: nil, month: "Apr", day: "25", location:"somewhere")!
+        let concert1 = Concert(band: "Artist Name", photo: nil, month: "Apr", day: "25", location:"1805 Geary Blvd, San Francisco, CA 94115")!
         
-        let concert2 = Concert(band: "Artist Name", photo: nil, month: "Sept", day: "5", location:"somewhere")!
+        let concert2 = Concert(band: "Artist Name", photo: nil, month: "Sept", day: "5", location:"4 Pennsylvania Plaza, New York, NY 10001")!
         
         let concert3 = Concert(band: "Artist Name", photo: nil, month: "Oct", day: "12", location:"somewhere")!
         
@@ -64,18 +66,33 @@ class ConcertTableViewController: UITableViewController {
         cell.bandname.text = concert.band
         cell.monthlabel.text = concert.month
         cell.datelabel.text = concert.day
-        
+        cell.venuelocation = concert.location
+        print(concert.location)
         return cell
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if(segue.identifier == "showMapDetail") {
+            //get index path
+            let button = sender as! UIButton
+            let view = button.superview!
+            let cell = view.superview as! ConcertTableViewCell
+            
+            let indexPath = itemtable.indexPathForCell(cell)
+            let NextViewController = (segue.destinationViewController as! MapViewController)
+           
+            
+            let currentcell: ConcertTableViewCell = tableView.cellForRowAtIndexPath(indexPath!) as! ConcertTableViewCell!
+            NextViewController.maplocation = currentcell.venuelocation
+
+        }
     }
-    */
+   
 
 }

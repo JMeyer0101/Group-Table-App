@@ -9,7 +9,8 @@
 import UIKit
 
 class ConcertTableViewCell: UITableViewCell {
-
+    
+    var venuelocation: String!
     @IBOutlet var bandname: UILabel!
     @IBOutlet var monthlabel: UILabel!
     @IBOutlet var datelabel: UILabel!

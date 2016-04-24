@@ -105,7 +105,6 @@
 		41DB877E1CC9A6F500A1A63F /* simpletable */ = {
 			isa = PBXGroup;
 			children = (
-				41DB87B91CCC52CB00A1A63F /* MapViewController.swift */,
 				41DB877F1CC9A6F500A1A63F /* AppDelegate.swift */,
 				41DB87831CC9A6F500A1A63F /* Main.storyboard */,
 				41DB87AF1CCC206200A1A63F /* Concert.swift */,
@@ -114,6 +113,7 @@
 				41DB87881CC9A6F500A1A63F /* LaunchScreen.storyboard */,
 				41DB878B1CC9A6F500A1A63F /* Info.plist */,
 				41DB87AD1CCC0F7200A1A63F /* ConcertViewController.swift */,
+				41DB87B91CCC52CB00A1A63F /* MapViewController.swift */,
 				41DB87B51CCC385100A1A63F /* ConcertTableViewController.swift */,
 			);
 			path = simpletable;
