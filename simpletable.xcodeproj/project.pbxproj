@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		41DB87801CC9A6F500A1A63F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB877F1CC9A6F500A1A63F /* AppDelegate.swift */; };
-		41DB87821CC9A6F500A1A63F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB87811CC9A6F500A1A63F /* ViewController.swift */; };
 		41DB87851CC9A6F500A1A63F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DB87831CC9A6F500A1A63F /* Main.storyboard */; };
 		41DB87871CC9A6F500A1A63F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41DB87861CC9A6F500A1A63F /* Assets.xcassets */; };
 		41DB878A1CC9A6F500A1A63F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DB87881CC9A6F500A1A63F /* LaunchScreen.storyboard */; };
 		41DB87951CC9A6F600A1A63F /* simpletableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB87941CC9A6F600A1A63F /* simpletableTests.swift */; };
 		41DB87A01CC9A6F600A1A63F /* simpletableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB879F1CC9A6F600A1A63F /* simpletableUITests.swift */; };
+		41DB87AE1CCC0F7200A1A63F /* ConcertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB87AD1CCC0F7200A1A63F /* ConcertViewController.swift */; };
+		41DB87B01CCC206200A1A63F /* Concert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB87AF1CCC206200A1A63F /* Concert.swift */; };
+		41DB87B21CCC250500A1A63F /* ConcertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB87B11CCC250500A1A63F /* ConcertTableViewCell.swift */; };
+		41DB87B61CCC385100A1A63F /* ConcertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB87B51CCC385100A1A63F /* ConcertTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		41DB877C1CC9A6F500A1A63F /* simpletable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpletable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DB877F1CC9A6F500A1A63F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41DB87811CC9A6F500A1A63F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		41DB87841CC9A6F500A1A63F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41DB87861CC9A6F500A1A63F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41DB87891CC9A6F500A1A63F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		41DB879B1CC9A6F600A1A63F /* simpletableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simpletableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DB879F1CC9A6F600A1A63F /* simpletableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpletableUITests.swift; sourceTree = "<group>"; };
 		41DB87A11CC9A6F600A1A63F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41DB87AD1CCC0F7200A1A63F /* ConcertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcertViewController.swift; sourceTree = "<group>"; };
+		41DB87AF1CCC206200A1A63F /* Concert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concert.swift; sourceTree = "<group>"; };
+		41DB87B11CCC250500A1A63F /* ConcertTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcertTableViewCell.swift; sourceTree = "<group>"; };
+		41DB87B51CCC385100A1A63F /* ConcertTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcertTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				41DB877F1CC9A6F500A1A63F /* AppDelegate.swift */,
-				41DB87811CC9A6F500A1A63F /* ViewController.swift */,
 				41DB87831CC9A6F500A1A63F /* Main.storyboard */,
+				41DB87AF1CCC206200A1A63F /* Concert.swift */,
+				41DB87B11CCC250500A1A63F /* ConcertTableViewCell.swift */,
 				41DB87861CC9A6F500A1A63F /* Assets.xcassets */,
 				41DB87881CC9A6F500A1A63F /* LaunchScreen.storyboard */,
 				41DB878B1CC9A6F500A1A63F /* Info.plist */,
+				41DB87AD1CCC0F7200A1A63F /* ConcertViewController.swift */,
+				41DB87B51CCC385100A1A63F /* ConcertTableViewController.swift */,
 			);
 			path = simpletable;
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41DB87821CC9A6F500A1A63F /* ViewController.swift in Sources */,
 				41DB87801CC9A6F500A1A63F /* AppDelegate.swift in Sources */,
+				41DB87B21CCC250500A1A63F /* ConcertTableViewCell.swift in Sources */,
+				41DB87B01CCC206200A1A63F /* Concert.swift in Sources */,
+				41DB87B61CCC385100A1A63F /* ConcertTableViewController.swift in Sources */,
+				41DB87AE1CCC0F7200A1A63F /* ConcertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

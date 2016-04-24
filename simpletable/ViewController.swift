@@ -43,6 +43,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 reuseIdentifier: simpleTableIdentifier)
         }
         
+        let image = UIImage(named: "AlbumCover")
+        
+        cell!.imageView!.image = image
+        //let highlightedImage = UIImage(named: "star2")
+        //cell!.imageView!.highlightedImage = highlightedImage
+        
         cell!.textLabel!.text = concerts[indexPath.row]
         return cell!
     }
