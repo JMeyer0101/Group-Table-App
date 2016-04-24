@@ -10,16 +10,18 @@ import UIKit
 
 class ConcertViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
-    
+    var concert: Concert!
     @IBOutlet var photoImageView: UIImageView!
     
-    @IBOutlet var donebutton: UIBarButtonItem!
+   
     
     
    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        photoImageView.image = concert.photo
+       
         // Do any additional setup after loading the view.
         
     }
@@ -42,6 +44,7 @@ class ConcertViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         // Set photoImageView to display the selected image.
         photoImageView.image = selectedImage
+        concert.photo = selectedImage
         
         // Dismiss the picker.
         dismissViewControllerAnimated(true, completion: nil)

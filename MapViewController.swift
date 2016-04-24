@@ -30,7 +30,7 @@ class MapViewController: UIViewController {
                     let coordinates:CLLocationCoordinate2D = placemark.location!.coordinate
                     
                     //get get mkcoordinateregion for mapkit
-                    let regionRadius: CLLocationDistance = 700
+                    let regionRadius: CLLocationDistance = 100000
                     let coordinateRegion = MKCoordinateRegionMakeWithDistance(coordinates,
                         regionRadius * 2.0, regionRadius * 2.0)
                     
